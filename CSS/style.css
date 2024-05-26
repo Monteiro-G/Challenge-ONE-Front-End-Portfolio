@@ -36,7 +36,7 @@ ___________________________________
 */
 *{
 background-color: #1a191d;
-background-color: #15202b;
+/*background-color: #15202b;*/
 color: #ffffff;
 
 }
@@ -46,4 +46,8 @@ color: #ffffff;
     font-weight: 600;
     font-style: normal;
     font-size: 17 px;
+}
+
+#conteudo-adicional {
+  display: none; /* Começa oculto */
 }

@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
-    <!--Título do seu site-->   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--Importa o ícone + -->
+     
     <title>Portfólio Inicial</title>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--Importa o jQuery --> 
+    <script src="script.js"></script> <!-- Inclui o arquivo JavaScript -->
+   
+   
 </head>
 <body>
+    
     <!--Seção Menu Principal-->
     <header>
         <nav>
@@ -42,60 +48,109 @@
             <h2 class="subtitulo">Hobbies</h2>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name">Jogar Voleibol</li>
+                        <li class="hobbies__img"><img src="img/volei 32px.png"></li>
+                        <li class="hobbies__name">Voleibol</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__img"><img src="img/viajem 32px.png"></li>
                         <li class="hobbies__name">Viajar</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__img"><img src="img/cozinha 32px.png"></li>
                         <li class="hobbies__name">Culinária</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__img"><img src="img/finanças 32px.png"></li>
                         <li class="hobbies__name">Organização Financeira</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__img"><img src="img/jardinagem 32px.png"></li>
                         <li class="hobbies__name">Jardinagem</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__img"><img src="img/movie 32px.png"></li>
                         <li class="hobbies__name">Cinema e Séries</li>
                     </ul>
                 </div>
             <h2 class="subtitulo">Soft Skills</h2>
-                <nav>
-                    <ul>
-                        <li><h3>Desenvolvimento Pessoal</h3><p>Autodisciplina: Manter-se focado e motivado para atingir metas pessoais e profissionais.</p><p>Autoconsciência: Reconhecer e compreender suas próprias emoções, forças e fraquezas.</p></li>
-                        <li><h3>Habilidades de Serviço ao Cliente</h3><p>Empatia no Atendimento: Entender e se preocupar com as necessidades e preocupações dos clientes.</p><p>Resolução de Conflitos com Clientes: Lidar com reclamações e problemas de clientes de maneira eficaz e calmante.</p></li>
-                        <li><h3>Resolução de Problemas</h3><p>Análise de Problemas: Descompor um problema em partes menores e analisáveis.</p><p>Tomada de Decisão : Avaliar opções e consequências para tomar a melhor decisão possível.</p><p>Proatividade: Tomar a iniciativa de resolver problemas e melhorar processos sem serem solicitados.</p></li>
-                        <li><h3>Ética e Integridade</h3> <p>Transparência: Ser honesto e claro em todas as comunicações e ações.</p><p>Responsabilidade: Assumir responsabilidade por suas ações e seus resultados.</p></a></li>
-                    </ul>
-                </nav>
-            <h2 class="subtitulo">Hard Skills</h2>
+            <div class="Soft__skills__box">
                 
                 <ul>
-                    <li><h3>Análise de Dados e Relatórios</h3><p>Excel:
-                        Manipulação, análise, visualização de dados e automação de tarefas com macros.</p><p>Report Builder: Criação de relatórios personalizados simples</p><p>SQL Básico: Consultas de banco de dados, manipulação e extração de dados</p></li>
-                    <li><h3>Software de Gestão Empresarial</h3><p>WinThor: Gestão de operações empresariais, controle de estoques, processos de compra e vendas e faturamento.</p><p>2030 CheckOut: Processos de checkout e pagamento.</p></li>
-                    <li><h3>Manutenção e Instalação Windows</h3><p>Instalação e configuração do sistema operacional Windows, solução de problemas e manutenção de sistemas</p></li>
-                    <li><h3>Tecnologia da Informação e Suporte Técnico</h3><p></p><p>Comandos Linux Básicos: Navegação e gestão de arquivos no Linux.</p></li>
-                    <li><h3>Design Gráfico e Modelagem 3D</h3><p>Adobe Photoshop: Edição e manipulação de imagens.</p><p>SketchUp: Criar modelos arquitetônicos detalhados de edifícios, casas, paisagens, espaços interiores e desenvolver layouts de interiores, incluindo mobiliário, decoração e disposição de espaços.</p></li>
-                    <li><h3>Design de Interface (UI)</h3><p>Figma: Prototipagem interativa e design colaborativo.</p></li> 
+                    <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Desenvolvimento Pessoal</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                    <li class="Soft__skills__name" id="conteudo-adicional">
+                        <p>Autodisciplina: Manter-se focado e motivado para atingir metas pessoais e profissionais.</p>
+                        <p>Autoconsciência: Reconhecer e compreender suas próprias emoções, forças e fraquezas.</p></li>
                 </ul>
+              
+            </div>
+            <div class="Soft__skills__box">
+                <ul>
+                    <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Habilidades de Serviço ao Cliente</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                    <li class="Soft__skills__name" id="conteudo-adicional">
+                        <p>Empatia no Atendimento: Entender e se preocupar com as necessidades e preocupações dos clientes.</p>
+                        <p>Resolução de Conflitos com Clientes: Lidar com reclamações e problemas de clientes de maneira eficaz e calmante.</p></li>
+                </ul>
+            </div>
+            <div class="Soft__skills__box">
+                <ul>
+                    <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Resolução de Problemas</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                    <li class="Soft__skills__name" id="conteudo-adicional">
+                        <p>Análise de Problemas: Descompor um problema em partes menores e analisáveis.</p>
+                        <p>Tomada de Decisão : Avaliar opções e consequências para tomar a melhor decisão possível.</p>
+                        <p>Proatividade: Tomar a iniciativa de resolver problemas e melhorar processos sem serem solicitados.</p></li>
+                </ul>
+            </div>
+            <div class="Soft__skills__box">
+                <ul>
+                    <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Ética e Integridade</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                    <li class="Soft__skills__name" id="conteudo-adicional">
+                        <p>Transparência: Ser honesto e claro em todas as comunicações e ações.</p>
+                        <p>Responsabilidade: Assumir responsabilidade por suas ações e seus resultados.</p></li>
+                </ul>
+            </div>
+            <h2 class="subtitulo">Hard Skills</h2>
+        </div>
+        <div class="Soft__skills__box">
+            <ul>
+                <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Análise de Dados e Relatórios</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                <li class="Soft__skills__name" id="conteudo-adicional">
+                    <p>Excel: Manipulação, análise, visualização de dados e automação de tarefas com macros.</p>
+                    <p>Report Builder: Criação de relatórios personalizados simples</p>
+                    <p>SQL Básico: Consultas de banco de dados, manipulação e extração de dados</p></li>
+            </ul>
+        </div> 
+        <div class="Soft__skills__box">
+            <ul>
+                <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Manutenção e Instalação Windows</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                <li class="Soft__skills__name" id="conteudo-adicional">
+                    <p>Instalação e configuração do sistema operacional Windows, solução de problemas e manutenção de sistemas</p></li>
+            </ul>
+        </div>
+        <div class="Soft__skills__box">
+            <ul>
+                <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Tecnologia da Informação e Suporte Técnico</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                <li class="Soft__skills__name" id="conteudo-adicional">
+                    <p>Comandos Linux Básicos: Navegação e gestão de arquivos no Linux.</p></li>
+            </ul>
+        </div>
+        <div class="Soft__skills__box">
+            <ul>
+                <li class="Soft__skills__name"><img src="img/movie 32px.png"> <h3>Design Gráfico e Modelagem 3D</h3><button id="botao-mostrar-mais"><i class="fas fa-plus"></i></button></li>
+                <li class="Soft__skills__name" id="conteudo-adicional">
+                    <p>Adobe Photoshop: Edição e manipulação de imagens.</p>
+                    <p>SketchUp: Criar modelos arquitetônicos detalhados de edifícios, casas, paisagens, espaços interiores e desenvolver layouts de interiores, incluindo mobiliário, decoração e disposição de espaços.</p></li>
+            </ul>
+        </div>
         </section>
         <!--Seção Formações + Cursos-->
         <section>
@@ -158,6 +213,7 @@
     </main>
     <!--Footer/Rodapé-->
     <footer></footer>
+    
     
 </body>
 </html>
