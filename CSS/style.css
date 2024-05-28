@@ -48,6 +48,14 @@ color: #ffffff;
     font-size: 17 px;
 }
 
-#conteudo-adicional {
-  display: none; /* Começa oculto */
+.conteudo-adicional {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.conteudo-adicional.show {
+  display: block;
+  max-height: 1000px; /* Ajuste conforme a altura do conteúdo */
+  padding: 10px 0;
 }
