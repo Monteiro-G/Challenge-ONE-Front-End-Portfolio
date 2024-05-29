@@ -35,18 +35,54 @@ ___________________________________
 
 */
 *{
-background-color: #1a191d;
-/*background-color: #15202b;*/
 color: #ffffff;
-
 }
-
 .subtitulo{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 17 px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17 px;
 }
+
+
+header{
+  background: linear-gradient(175deg, #15202b, #1a191d);
+}
+body{
+  background-color: #1a191d;
+  display: flex;
+  flex-direction: column;
+  
+}
+.conteine{
+height: 100%;
+padding: 0px 15%;
+
+}
+.conteine__menu{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  align-items: center;
+  justify-content:space-around;
+  }
+
+  .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+  .cabecalho__titulo{
+
+  }
+  .cabecalho__subtitulo{
+    
+  }
+
 
 .conteudo-adicional {
   max-height: 0;
