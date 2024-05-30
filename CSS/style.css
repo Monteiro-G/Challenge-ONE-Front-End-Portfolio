@@ -41,7 +41,7 @@ color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 17 px;
+  font-size: 20px;
 }
 
 
@@ -75,15 +75,44 @@ padding: 0px 15%;
     display: flex;
     align-items: center;
     justify-content:space-around;
+    padding: 0px 5%;
   }
   .cabecalho__titulo{
-
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 108px;
   }
   .cabecalho__subtitulo{
-    
+    font-family: "Roboto Mono", sans-serif;
+    font-style: normal;
+    font-size: 22px;
   }
+  .conteine__sobreMim{
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(180deg,  #1a191d,#15202b, #1a191d);
+    justify-content:space-between;
+    padding: 0px 8%;
+    gap: 24px;
+  }
+  .conteine__sobreMim__textos{
+  display: flex;
+  flex-direction: column;
+ justify-content: end;
+  text-align: left;
+  font-family: "Roboto Mono", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  gap: 15px;
+}
+.conteine__hobbies{
 
-
+flex-direction: column;
+}
+.conteine__hobbies__tipos{
+  display: flex;
+}
 .conteudo-adicional {
   max-height: 0;
   overflow: hidden;
